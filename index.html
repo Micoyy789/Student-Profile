@@ -11,9 +11,9 @@
       --primary-color: #f0f3f4;
       --secondary-color: #a4b0be;
       --accent-color: #1abc9c;
+      --hover-bg: #16a085;
       --muted-color: #7f8c8d;
       --card-bg: #34495e;
-      --hover-bg: #16a085;
       --shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
       --border-radius: 12px;
       --transition-duration: 0.3s;
@@ -29,16 +29,16 @@
       font-family: 'Roboto', sans-serif;
       background-color: var(--bg-color);
       color: var(--primary-color);
-      padding: 1.5rem;
+      padding: 2rem;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       min-height: 100vh;
     }
 
     .container {
-      width: 100%;
       max-width: 900px;
+      width: 100%;
       background-color: var(--card-bg);
       padding: 2rem;
       border-radius: var(--border-radius);
@@ -57,21 +57,23 @@
     }
 
     .profile-header h1 {
-      font-size: 2rem;
-      font-weight: 700;
+      font-size: 2.2rem;
       color: var(--primary-color);
+      font-weight: 700;
+      letter-spacing: -0.5px;
     }
 
     .profile {
-      background-color: var(--card-bg);
+      margin-bottom: 2rem;
       padding: 1.5rem;
+      background-color: var(--card-bg);
       border-radius: var(--border-radius);
       box-shadow: var(--shadow);
     }
 
     .profile p {
-      font-size: 1.05rem;
-      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
     }
 
     .profile strong {
@@ -87,12 +89,15 @@
     }
 
     .links a {
-      flex: 1 1 250px;
+      flex: 1 1 45%;
+      min-width: 200px;
+      max-width: 100%;
       text-align: center;
-      padding: 0.9rem 1.2rem;
+      padding: 1rem;
       font-size: 1rem;
+      font-weight: 500;
       background-color: var(--accent-color);
-      color: #fff;
+      color: white;
       border-radius: var(--border-radius);
       text-decoration: none;
       transition: background-color var(--transition-duration), transform var(--transition-duration);
@@ -101,8 +106,8 @@
 
     .links a:hover {
       background-color: var(--hover-bg);
-      transform: translateY(-4px);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     }
 
     @media (max-width: 768px) {
@@ -111,35 +116,35 @@
       }
 
       .profile-header h1 {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
       }
 
-      .profile p {
-        font-size: 1rem;
-      }
-
-      .links a {
-        font-size: 0.95rem;
-        padding: 0.8rem 1rem;
+      .profile {
+        padding: 1.2rem;
       }
     }
 
     @media (max-width: 480px) {
+      body {
+        padding: 1rem;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+
       .profile-header h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
       }
 
-      .profile p {
-        font-size: 0.95rem;
-      }
-
-      .links {
-        flex-direction: column;
-        align-items: stretch;
+      .profile {
+        padding: 1rem;
       }
 
       .links a {
-        width: 100%;
+        flex: 1 1 100%;
+        font-size: 0.95rem;
+        padding: 0.9rem;
       }
     }
   </style>
@@ -162,10 +167,10 @@
     </div>
 
     <div class="links">
-      <a href="https://micoyy789.github.io/Word-Guessing-Game/">Guess the Secret Word Game</a>
-      <a href="https://micoyy789.github.io/Browser-Environment-Dashboard/">Browser Environment Dashboard</a>
-      <a href="https://micoyy789.github.io/Interactive-DOM-Traversal-and-Manipulation/">DOM Traversal & Manipulation</a>
-      <a href="https://micoyy789.github.io/Interactive-Canvas-Shape-Editor/">Canvas Shape Editor</a>
+      <a href="https://micoyy789.github.io/Word-Guessing-Game/" target="_blank">Guess the Secret Word Game</a>
+      <a href="https://micoyy789.github.io/Browser-Environment-Dashboard/" target="_blank">Browser Environment Dashboard</a>
+      <a href="https://micoyy789.github.io/Interactive-DOM-Traversal-and-Manipulation/" target="_blank">DOM Traversal and Manipulation</a>
+      <a href="https://micoyy789.github.io/Interactive-Canvas-Shape-Editor/" target="_blank">Canvas Shape Editor</a>
     </div>
   </div>
 </body>
